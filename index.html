@@ -33,10 +33,17 @@
     <!-- bars background -->
 
     <!-- home section -->
+        <!-- Section initially set to active (separate class) -->
      <section class="home">
         <div class="home-detail">
             <h1>Dylan Gibbons</h1>
-            <h2>Web Developer</h2>
+            <h2>
+                <!-- Indexing spans so they can be alternated -->
+                <span style="--i:4;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:3;" data-text="Mobile Developer">Mobile Developer</span>
+                <span style="--i:2;" data-text="Tech Enthusiast">Tech Enthusiast</span>
+                <span style="--i:1;" data-text="Academic Editor">Academic Editor</span>
+            </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam omnis dolorem aliquid sed, 
                 assumenda necessitatibus possimus, maxime aut praesentium et ex itaque obcaecati! Neque animi tempora 
                 ducimus similique quae!</p>
@@ -63,8 +70,99 @@
      </section>
 
     <!-- services section -->
+     <section class="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bx-code-alt"></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+                    dolorum est voluptas quasi delectus itaque!</p>
+            </div>
 
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bxs-paint"></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+                    dolorum est voluptas quasi delectus itaque!</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bx-palette"></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+                    dolorum est voluptas quasi delectus itaque!</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bx-trending-up"></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>SEO</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+                    dolorum est voluptas quasi delectus itaque!</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bx-slideshow"></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+                    dolorum est voluptas quasi delectus itaque!</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bx-camera"></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+                    dolorum est voluptas quasi delectus itaque!</p>
+            </div>
+
+        </div>
+     </section>
     <!-- resume section -->
+     <section class="resume active">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Deserunt accusantium expedita modi quia a 
+                    nobis sint, quasi voluptatibus minima aliquam non! Corporis impedit
+                     dolorem nemo facilis inventore quam at tempora.</p>
+                <!-- Using secondary active class to control content flow/display-->
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+
+            <div class="resume-box">
+                <div class="resume-detail experience">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Reiciendis dolorem quisquam modi repellat eligendi nostrum ad tenetur. 
+                         Explicabo architecto minus quae reiciendis, labore aspernatur magnam cupiditate!
+                          Soluta tempore culpa doloribus!</p>
+                    
+                </div>
+            </div>
+        </div>
+     </section>
 
     <!-- portfolio section -->
 

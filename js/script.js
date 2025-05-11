@@ -1,3 +1,65 @@
+// Basic page navigation variables
+const navLinks = document.querySelectorAll('header nav a');
+const logoLink = document.querySelector('.logo');
+const sections = document.querySelectorAll('section');
+
+
+const activePage = () => {
+    // Variables for page change animation
+    const header = document.querySelector('header');
+    const barsBox = document.querySelector('.bars-box');
+
+    header.classList.remove('active');
+    setTimeout(() => {
+        header.classList.add('active');
+    }, 1100);
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    barsBox.classList.remove('active');
+    setTimeout(() => {
+        barsBox.classList.add('active');
+    }, 1100);
+
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+}
+
+navLinks.forEach((link, idx) => {
+    link.addEventListener('click', () => {
+        // if link is not active, call activePage() to remove active class
+        // and then add 'active' to whatever link was clicked
+        if(!link.classList.contains('active')){
+            activePage();
+
+            link.classList.add('active');
+
+            // Adding class to switch pages after animation plays
+            setTimeout(() => {
+                sections[idx].classList.add('active');
+            }, 1100);
+        }
+
+    });
+});
+
+// Same logic as above but checking whether we're on the home page
+logoLink.addEventListener('click', () =>{
+    if(!navLinks[0].classList.contains('active')){
+        activePage();
+
+        navLinks[0].classList.add('active');
+
+        setTimeout(() => {
+            sections[0].classList.add('active');
+        }, 1100);
+    }
+});
+
+
 const resumeBtns = document.querySelectorAll('.resume-btn');
 
 // Simple anonymous function to remove active from the current active class and add it

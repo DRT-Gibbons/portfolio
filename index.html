@@ -31,15 +31,16 @@
         </nav>
      </header>
 
-    <!-- bars background (carousel logic to swap between pages) -->
-     <div class="bars-box active">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-     </div>
+    <!-- bars background (for page switch animation) -->
+     <ul class="bars-box active">
+        <li class="bar" style="--i:6;"></li>
+        <li class="bar" style="--i:5;"></li>
+        <li class="bar" style="--i:4;"></li>
+        <li class="bar" style="--i:3;"></li>
+        <li class="bar" style="--i:2;"></li>
+        <li class="bar" style="--i:1;"></li>
+     </ul>
+
     <!-- home section -->
         <!-- Section initially set to active (separate class) -->
      <section class="home active">
@@ -58,10 +59,7 @@
                     <div class="sci">
                         <a href="#"><i class="bx bxl-github"></i></a>
                         <a href="#"><i class="bx bxl-linkedin"></i></a>
-                        <a href="#"><i class="bx bxl-discord-alt"></i></a>
-                        <a href="#"><i class="bx bxl-youtube"></i></a>
                     </div>
-
                 </div>
         </div>
 
@@ -69,7 +67,8 @@
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="images/home.png" alt="">
+                    <!-- Image copyright: freeiconspng.com -->
+                    <img src="images/home.png" alt="Android picture">
                 </div>
             </div>
         </div>
@@ -79,59 +78,59 @@
      <section class="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
-            <div class="services-box">
+            <article class="services-box">
                 <div class="icon">
                     <i class="bx bx-code-alt"></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorum est voluptas quasi delectus itaque!</p>
-            </div>
+            </article>
 
-            <div class="services-box">
+            <article class="services-box">
                 <div class="icon">
                     <i class="bx bxs-paint"></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
                 <h3>UI/UX Design</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorum est voluptas quasi delectus itaque!</p>
-            </div>
+            </article>
 
-            <div class="services-box">
+            <article class="services-box">
                 <div class="icon">
                     <i class="bx bx-palette"></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
                 <h3>Graphic Design</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorum est voluptas quasi delectus itaque!</p>
-            </div>
+            </article>
 
-            <div class="services-box">
+            <article class="services-box">
                 <div class="icon">
                     <i class="bx bx-trending-up"></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
                 <h3>SEO</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorum est voluptas quasi delectus itaque!</p>
-            </div>
+            </article>
 
-            <div class="services-box">
+            <article class="services-box">
                 <div class="icon">
                     <i class="bx bx-slideshow"></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
                 <h3>Video Editing</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorum est voluptas quasi delectus itaque!</p>
-            </div>
+            </article>
 
-            <div class="services-box">
+            <article class="services-box">
                 <div class="icon">
                     <i class="bx bx-camera"></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
                 <h3>Photography</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorum est voluptas quasi delectus itaque!</p>
-            </div>
+            </article>
 
         </div>
      </section>
@@ -139,7 +138,7 @@
     <!-- resume section -->
      <section class="resume">
         <div class="resume-container">
-            <div class="resume-box">
+            <aside class="resume-box">
                 <h2>Why Hire Me?</h2>
                 <p class="desc">Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Deserunt accusantium expedita modi quia a nobis sint, quasi voluptatibus minima aliquam non! Corporis impedit dolorem nemo facilis inventore quam at tempora.</p>
                 <!-- Using secondary active class to control content flow/display-->
@@ -147,151 +146,151 @@
                 <button class="resume-btn">Education</button>
                 <button class="resume-btn">Skills</button>
                 <button class="resume-btn">About Me</button>
-            </div>
+            </aside>
 
             <div class="resume-box">
                 <!-- Initially set to active (toggled between resume-detail) -->
-                <div class="resume-detail experience active">
+                <article class="resume-detail experience active">
                     <h2 class="heading">My <span>Experience</span></h2>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorem quisquam modi repellat eligendi nostrum ad tenetur.  Explicabo architecto minus quae reiciendis, labore aspernatur magnam cupiditate! Soluta tempore culpa doloribus!</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
+                    <ul class="resume-list">
+                        <li class="resume-item">
                             <p class="year">2023 - Present</p>
                             <h3>Frontend Developer</h3>
                             <p class="company">ABC Corp.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem?</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2022 - 2023</p>
                             <h3>Frontend Developer</h3>
                             <p class="company">ABC Corp.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem?</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2023 - Present</p>
                             <h3>Frontend Developer</h3>
                             <p class="company">ABC Corp.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem?</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2023 - Present</p>
                             <h3>Frontend Developer</h3>
                             <p class="company">ABC Corp.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem?</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2023 - Present</p>
                             <h3>Frontend Developer</h3>
                             <p class="company">ABC Corp.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem?</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2023 - Present</p>
                             <h3>Frontend Developer</h3>
                             <p class="company">ABC Corp.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem?</p>
-                        </div>
-                    </div>
-                </div>
+                        </li>
+                    </ul>
+                </article>
 
-                <div class="resume-detail education">
+                <article class="resume-detail education">
                     <h2 class="heading">My <span>Education</span></h2>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorem quisquam modi repellat eligendi nostrum ad tenetur.  Explicabo architecto minus quae reiciendis, labore aspernatur magnam cupiditate! Soluta tempore culpa doloribus!</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
+                    <ul class="resume-list">
+                        <li class="resume-item">
                             <p class="year">2024</p>
                             <h3>programming</h3>
                             <p class="company">Georgian College</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, provident!</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2024</p>
                             <h3>programming</h3>
                             <p class="company">Georgian College</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, provident!</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2024</p>
                             <h3>programming</h3>
                             <p class="company">Georgian College</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, provident!</p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p class="year">2024</p>
                             <h3>programming</h3>
                             <p class="company">Georgian College</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, provident!</p>
-                        </div>
-                    </div>
-                </div>
+                        </li>
+                    </ul>
+                </article>
 
-                <div class="resume-detail skills">
+                <article class="resume-detail skills">
                     <h2 class="heading">My <span>Skills</span></h2>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorem quisquam modi repellat eligendi nostrum ad tenetur.  Explicabo architecto minus quae reiciendis, labore aspernatur magnam cupiditate! Soluta tempore culpa doloribus!</p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <i class="bx bxl-html5"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="bx bxl-css3"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="bx bxl-javascript"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="bx bxl-java"></i>
-                                <span>Java</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="bx bxl-android"></i>
-                                <span>Kotlin (Android)</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class='bx bxl-internet-explorer'></i>
-                                <span>C# (ASP.NET)</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class='bx bxs-data' ></i>
-                                <span>Linux Administration</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class='bx bx-cloud' ></i>
-                                <span>Azure</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class='bx bxl-mongodb' ></i>
-                                <span>MongoDB</span>
-                            </div>
-                        </div>
-                </div>
+                    <ul class="resume-list">
+                        <li class="resume-item">
+                            <i class="bx bxl-html5"></i>
+                            <span>HTML</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class="bx bxl-css3"></i>
+                            <span>CSS</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class="bx bxl-javascript"></i>
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class="bx bxl-java"></i>
+                            <span>Java</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class="bx bxl-android"></i>
+                            <span>Kotlin (Android)</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class='bx bxl-internet-explorer'></i>
+                            <span>C# (ASP.NET)</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class='bx bxs-data' ></i>
+                            <span>Linux Administration</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class='bx bx-cloud' ></i>
+                            <span>Azure</span>
+                        </li>
+                        <li class="resume-item">
+                            <i class='bx bxl-mongodb' ></i>
+                            <span>MongoDB</span>
+                        </li>
+                    </ul>
+                </article>
 
-                <div class="resume-detail about">
+                <article class="resume-detail about">
                     <h2 class="heading">About <span>Me</span></h2>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorem quisquam modi repellat eligendi nostrum ad tenetur. Explicabo architecto minus quae reiciendis, labore aspernatur magnam cupiditate! Soluta tempore culpa doloribus!</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
+                    <ul class="resume-list">
+                        <li class="resume-item">
                             <p>Name <span>Dylan Gibbons</span></p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p>City <span>Lefroy, Ontario</span></p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p>Occupation <span>Developer</span></p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p>Experience <span>~2 years</span></p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p>Freelance <span>Available</span></p>
-                        </div>
-                        <div class="resume-item">
+                        </li>
+                        <li class="resume-item">
                             <p>Languages <span>English</span></p>
-                        </div>
-                    </div>
-                </div>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </div>
      </section>
@@ -383,29 +382,29 @@
 
             <div class="portfolio-box">
                 <div class="portfolio-carousel">
-                    <div class="img-slide">
-                        <div class="img-item">
+                    <ul class="img-slide">
+                        <li class="img-item">
                             <img src="images/portfolio1.jpg" alt="">
-                        </div>
-                        <div class="img-item">
+                        </li>
+                        <li class="img-item">
                             <img src="images/portfolio2.jpg" alt="">
-                        </div>
-                        <div class="img-item">
+                        </li>
+                        <li class="img-item">
                             <img src="images/portfolio3.jpg" alt="">
-                        </div>
-                        <div class="img-item">
+                        </li>
+                        <li class="img-item">
                             <img src="images/portfolio4.jpg" alt="">
-                        </div>
-                        <div class="img-item">
+                        </li>
+                        <li class="img-item">
                             <img src="images/portfolio5.jpg" alt="">
-                        </div>
-                        <div class="img-item">
+                        </li>
+                        <li class="img-item">
                             <img src="images/portfolio6.jpg" alt="">
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="navigation">
+                <div class="port-navigation">
                     <!-- Ability to move left is initially disabled -->
                     <button class="arrow-left disabled"><i class="bx bx-chevron-left"></i></button>
                     <button class="arrow-right"><i class="bx bx-chevron-right"></i></button>

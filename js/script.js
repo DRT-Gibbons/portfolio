@@ -2,7 +2,17 @@
 const navLinks = document.querySelectorAll('header nav a');
 const logoLink = document.querySelector('.logo');
 const sections = document.querySelectorAll('section');
+// Variable used for hamburger menu toggling
+const menuIcon = document.querySelector('#menu-icon');
+const navBar = document.querySelector('header nav');
 
+// Click eventListener for mobile hamburger menu functionality
+menuIcon.addEventListener('click', () => {
+    // X icon for cancelling menu dropdown
+    menuIcon.classList.toggle('bx-x');
+    
+    navBar.classList.toggle('active');
+});
 
 const activePage = () => {
     // Variables for page change animation
@@ -12,7 +22,7 @@ const activePage = () => {
     header.classList.remove('active');
     setTimeout(() => {
         header.classList.add('active');
-    }, 1100);
+    }, 800);
 
     navLinks.forEach(link => {
         link.classList.remove('active');
@@ -21,11 +31,15 @@ const activePage = () => {
     barsBox.classList.remove('active');
     setTimeout(() => {
         barsBox.classList.add('active');
-    }, 1100);
+    }, 800);
 
     sections.forEach(section => {
         section.classList.remove('active');
     });
+
+    // Removing mobile nav menu after click
+    menuIcon.classList.remove('bx-x');
+    navBar.classList.remove('active');
 }
 
 navLinks.forEach((link, idx) => {
@@ -40,7 +54,7 @@ navLinks.forEach((link, idx) => {
             // Adding class to switch pages after animation plays
             setTimeout(() => {
                 sections[idx].classList.add('active');
-            }, 1100);
+            }, 800);
         }
 
     });
@@ -55,7 +69,7 @@ logoLink.addEventListener('click', () =>{
 
         setTimeout(() => {
             sections[0].classList.add('active');
-        }, 1100);
+        }, 800);
     }
 });
 

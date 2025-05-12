@@ -95,8 +95,8 @@ resumeBtns.forEach((btn, i) => {
 });
 
 
-const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
-const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+const arrowRight = document.querySelector('.portfolio-box .port-navigation .arrow-right');
+const arrowLeft = document.querySelector('.portfolio-box .port-navigation .arrow-left');
 
 let index = 0;
 // Getting the number of projects to use as the upper limit of index

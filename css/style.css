@@ -70,6 +70,10 @@ header.active{
     font-weight: 700;
 }
 
+.logo:hover{
+    color: var(--main-color);
+}
+
 nav a{
     font-size: 2rem;
     color: var(--white-color);
@@ -293,11 +297,11 @@ section.active{
     background: conic-gradient(transparent, transparent, transparent, var(--main-color));
     transform: rotate(0deg);
     /* takes 10 seconds to complete one rotation and it rotates infinitely */
-    animation: rotate-border 10s linear infinite;
+    animation: rotate-border 6s linear infinite;
 }
 
 .home-img .img-box::after{
-    animation-delay: -5s;
+    animation-delay: -3s;
 }
 
 /* For the border animation around the img*/
@@ -479,7 +483,7 @@ section.active{
 .resume-list{
     /* Using grid columns and autofit to organize and make resume section more responsive */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     height: 45rem;
     overflow: auto;

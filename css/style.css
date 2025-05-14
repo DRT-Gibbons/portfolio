@@ -856,6 +856,18 @@ section.active{
     cursor: pointer;
 }
 
+/* Preventing browser default colours for autofilled inputs */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-color) inset !important;
+  box-shadow: 0 0 0 1000px var(--bg-color) inset !important;
+  -webkit-text-fill-color: var(--white-color) !important;
+  transition: var(--bg-color) 5000s ease-in-out 0s;
+}
+
 /* CONTACT SECTION ENDS */
 
 /* SUCCESS PAGE START */
@@ -867,6 +879,9 @@ section.active{
     margin-top: 1.5rem;
 }
 
+.honey{
+    display: none;
+}
 /* SUCCESS PAGE ENDS */
 
 /* BREAKPOINTS SECTION START */

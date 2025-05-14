@@ -1,0 +1,3 @@
+#ignoring specific file
+.DS_Store
+.env

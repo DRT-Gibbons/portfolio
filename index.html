@@ -48,11 +48,11 @@
             <h2>
                 <!-- Indexing spans so they can be alternated -->
                 <span style="--i:4;" data-text="Web/Mobile Developer">Web/Mobile Developer</span>
-                <span style="--i:3;" data-text="Computer Science Student">Computer Science Student</span>
+                <span style="--i:3;" data-text="CS Student">CS Student</span>
                 <span style="--i:2;" data-text="Tech Enthusiast">Tech Enthusiast</span>
                 <span style="--i:1;" data-text="Academic Editor">Academic Editor</span>
             </h2>
-            <p>Helping you ship your next product</p>
+            <p>Helping you ship your next product.</p>
                 <div class="btn-sci">
                     <a href="#" class="btn">Download CV</a>
                     <div class="sci">
@@ -258,7 +258,7 @@
                             <p>Name <span>Dylan Gibbons</span></p>
                         </li>
                         <li class="resume-item">
-                            <p>City <span>Lefroy, Ontario</span></p>
+                            <p>City <span>Innisfil, Ontario</span></p>
                         </li>
                         <li class="resume-item">
                             <p>Occupation <span>Developer</span></p>
@@ -401,40 +401,48 @@
         <div class="contact-container">
             <div class="contact-box">
                 <h2>Let's Work Together</h2>
-                <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ducimus nulla provident aliquid maxime fugiat suscipit incidunt eum illo soluta?</p>
+                <p class="desc">Feel free to contact me anytime by phone or email.</p>
 
-                <div class="contact-detail">
+                <!-- <article class="contact-detail">
                     <i class="bx bxs-phone"></i>
                     <div class="detail">
                         <p>Phone</p>
                         <p>123-456-7890</p>
                     </div>
-                </div>
-                <div class="contact-detail">
+                </article>
+                <article class="contact-detail">
                     <i class="bx bxs-envelope"></i>
                     <div class="detail">
                         <p>Email</p>
-                        <p>something@someone.com</p>
+                        <p>default@private.com</p>
                     </div>
-                </div>
-                <div class="contact-detail">
+                </article>
+                <article class="contact-detail">
                     <i class="bx bxs-map"></i>
                     <div class="detail">
                         <p>Address</p>
-                        <p>Somewhere, Ontario</p>
+                        <p>Innisfil, Ontario</p>
                     </div>
-                </div>
+                </article> -->
             </div>
 
             <div class="contact-box">
-                <form action="">
+                <!-- Using formsubmit to give functionality to the contact form -->
+                <form action="https://formsubmit.co/el/wevulo" method="POST">
+                    <!-- honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!-- Disable captcha -->
+                     <input type="hidden" name="_captcha" value="false">
+
+                     <!-- <input type="hidden" name="_next" value="dylangibbons.github.io/formsubmit/success.html"> -->
+
                     <h2 class="heading">Contact <span>Me</span></h2>
                     <div class="field-box">
-                        <input type="text" placeholder="First Name" required>
-                        <input type="text" placeholder="Last Name" required>
-                        <input type="text" placeholder="Phone Number">
-                        <input type="email" placeholder="Email" required>
-                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                        <input type="text" name="name" placeholder="First Name" required>
+                        <input type="text" name="lastName" placeholder="Last Name" required>
+                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(123)-456-7890">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" id="message" maxlength="300" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>

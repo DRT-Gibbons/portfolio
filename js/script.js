@@ -1,3 +1,16 @@
+// .env and .gitignore for sensitive information
+// require('dotenv').config();
+// const myEmail = process.env.secEmail;
+
+
+// Adding myEmail to appropriate spot via query selectors
+// const emailArticle = document.querySelectorAll('.contact-detail')[1];
+// const emailLabel = emailArticle.querySelector('.detail p');
+// const emailValue = emailLabel.nextElementSibling;
+// emailValue.textContent = myEmail;
+
+
+
 // Basic page navigation variables
 const navLinks = document.querySelectorAll('header nav a');
 const logoLink = document.querySelector('.logo');

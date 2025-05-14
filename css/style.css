@@ -275,6 +275,10 @@ section.active{
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+.home-img{
+    margin-left: 10rem;
+}
+
 .home-img .img-box{
     position: relative;
     width: 32vw;
@@ -854,6 +858,17 @@ section.active{
 
 /* CONTACT SECTION ENDS */
 
+/* SUCCESS PAGE START */
+.home-detail.success{
+    margin-bottom: 30rem;
+}
+
+.home-detail.success h2{
+    margin-top: 1.5rem;
+}
+
+/* SUCCESS PAGE ENDS */
+
 /* BREAKPOINTS SECTION START */
 @media screen and (max-width: 1200px) {
     /* Since almost all font is rem, just have to change the base font size */
@@ -917,6 +932,10 @@ section.active{
         gap: 2rem;
     }
 
+    .home-img{
+        margin-left: 0;
+    }
+    
     .home-img .img-box{
         width: 35rem;
         height: 35rem;

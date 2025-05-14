@@ -967,10 +967,9 @@ input:-webkit-autofill:active {
         gap: 3rem;
     }
 
-    .portfolio-container .portfolio-box:first-child{
-        /* NOTE: possibly change back to 0 / remove */
+    /* .portfolio-container .portfolio-box:first-child{
         order: 1;
-    }
+    } */
 
     .contact-box .field-box{
         grid-template-columns: repeat(2, 1fr);

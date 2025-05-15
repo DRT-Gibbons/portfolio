@@ -1,3 +1,4 @@
+<!-- Portfolio site for Dylan Gibbons -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -264,7 +265,7 @@
 
                 <article class="resume-detail about">
                     <h2 class="heading">About <span>Me</span></h2>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorem quisquam modi repellat eligendi nostrum ad tenetur. Explicabo architecto minus quae reiciendis, labore aspernatur magnam cupiditate! Soluta tempore culpa doloribus!</p>
+                    <p class="desc">As a dedicated software developer, I thrive on transforming complex challenges into streamlined, user-friendly applications. My approach blends a deep understanding of technology with a creative mindset, enabling me to build robust systems that adapt to evolving business needs. I am committed to writing clean, maintainable code and am always eager to explore new tools and methodologies to enhance my craft.</p>
                     <ul class="resume-list">
                         <li class="resume-item">
                             <p>Name <span>Dylan Gibbons</span></p>
@@ -370,34 +371,34 @@
                     <i class="bx bxs-phone"></i>
                     <div class="detail">
                         <p>Phone</p>
-                        <p>[Private on site]</p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="contact-detail">
                     <i class="bx bxs-envelope"></i>
                     <div class="detail">
                         <p>Email</p>
-                        <p>[Private on site]</p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="contact-detail">
                     <i class="bx bxs-map"></i>
                     <div class="detail">
                         <p>Address</p>
-                        <p>[Private on site]</p>
+                        <p>Innisfil, Ontario</p>
                     </div>
                 </article>
             </div>
 
             <div class="contact-box">
                 <!-- Using formsubmit to give functionality to the contact form -->
-                <form action="https://formsubmit.co/el/wevulo" method="POST">
+                <form action="https://formspree.io/f/xzzrykwg" method="POST">
                     <!-- honeypot -->
-                    <input type="text" class="honey "name="_honey">
+                    <!-- <input type="text" class="honey "name="_honey"> -->
                     <!-- Disable captcha -->
-                     <input type="hidden" name="_captcha" value="false">
+                     <!-- <input type="hidden" name="_captcha" value="false"> -->
                     <!-- Changing outbound from recaptcha to custom page -->
-                     <input type="hidden" name="_next" value="https://drt-gibbons.github.io/portfolio/success.html">
+                     <!-- <input type="hidden" name="_next" value="https://drt-gibbons.github.io/portfolio/success.html"> -->
 
                     <h2 class="heading">Contact <span>Me</span></h2>
                     <div class="field-box">
@@ -406,10 +407,10 @@
                         <!-- Non-required telephone input with verbose regex pattern -->
                         <input type="tel" name="phone" pattern="^(\(\d{3}\)[\-\s]?|\d{3}[\-\s]?)?\d{3}[\-\s]?\d{4}$"
                         placeholder="(123)-456-7890">
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" name="_replyto" placeholder="Email" required>
                         <textarea name="message" id="message" maxlength="300" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" value="Send">Send Message</button>
                 </form>
             </div>
         </div>

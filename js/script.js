@@ -161,3 +161,24 @@ arrowLeft.addEventListener('click', () => {
     }
     activePortfolio();
 });
+
+// Obfucscating email and phone for bots and adding as text content
+// Selecting all .detail divs
+const detailDivs = document.querySelectorAll('.detail');
+
+// Looping through each .detail div
+detailDivs.forEach((detailDiv, index) => {
+  // Finding all p tags inside the particular .detail div
+  const pTags = detailDiv.querySelectorAll('p');
+  
+  // Check if there is a second <p> and if it's empty
+  if (pTags.length > 1 && pTags[1].textContent.trim() === '') {
+    // Update the text of the empty <p>
+    if (index === 0) {
+      pTags[1].textContent = "705" + "-" + "623" + "-" + "5793";
+    } else if (index === 1) {
+      pTags[1].textContent = "drt" + "gibb" + "@" + "gmail" + ".com";
+    }
+    // The third .detail div's second <p> isn't empty, so nothing happens
+  }
+});
